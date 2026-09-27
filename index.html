@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Connexion</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .login-box { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); width: 100%; max-width: 320px; }
+        h2 { text-align: center; color: #1c1e21; margin-bottom: 20px; }
+        label { font-size: 14px; color: #606770; }
+        input { width: 100%; padding: 12px; margin: 8px 0 16px 0; border: 1px solid #ccd0d5; border-radius: 6px; box-sizing: border-box; font-size: 15px; }
+        button { width: 100%; padding: 12px; background-color: #1877f2; border: none; color: white; border-radius: 6px; font-size: 16px; font-weight: bold; cursor: pointer; }
+        button:hover { background-color: #166fe5; }
+    </style>
+</head>
+<body>
+
+<div class="login-box">
+    <h2>Connexion</h2>
+    <!-- Cette ligne affiche un message quand on clique sur le bouton -->
+    <form onsubmit="alert('Connexion réussie (Simulation)'); return false;">
+        <label for="username">Identifiant :</label>
+        <input type="text" id="username" placeholder="Ex: admin" required autocomplete="off">
+        
+        <label for="password">Mot de passe :</label>
+        <input type="password" id="password" placeholder="••••••••" required>
+        
+        <button type="submit">Se connecter</button>
+    </form>
+</div>
+
+</body>
+</html>
